@@ -1,6 +1,7 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace EventManagement.Models
 {
@@ -14,14 +15,17 @@ namespace EventManagement.Models
 
        public string Category { get; set; }
 
+        [DisplayName("Date & Time")]
         public DateTime Datetime {  get; set; }
 
        public string Location {  get; set; }
 
-       public IFormFile Image {  get; set; }
+       public string Image {  get; set; }
 
+        [DisplayName("Number of Tickets")]
        public int Numberoftickets {  get; set; }
 
+        [DisplayName("Ticket Price")]
        public double Ticketprice {  get; set; }
     }
 }

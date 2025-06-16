@@ -10,5 +10,6 @@ namespace EventManagement.Data
             : base(options)
         {
         }
+        public DbSet<Event> Events { get; set; }
     }
 }

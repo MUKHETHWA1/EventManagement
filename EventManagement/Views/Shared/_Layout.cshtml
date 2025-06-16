@@ -29,13 +29,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                       @*  @if (User.Identity.IsAuthenticated)
+                        @if (User.Identity.IsAuthenticated)
                         {
                             var user = await UserManager.GetUserAsync(User);
                             if (user != null && user.Role == "Organizer")
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="/Organizer/Dashboard">Farmer Dashboard</a>
+                                    <a class="nav-link text-dark" href="/Organizer/Dashboard">Organizer Dashboard</a>
                                 </li>
                             }
                             else if (user != null && user.Role == "Attendee")
@@ -44,7 +44,7 @@
                                     <a class="nav-link text-dark" href="/Attendee/Dashboard">Employee Dashboard</a>
                                 </li>
                             }
-                        } *@
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
